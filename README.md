@@ -17,7 +17,7 @@ mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo ..
 make
-perf report --call-graph dward ./stdmap
+perf record --call-graph dward ./stdmap
 hotspot
 ```
 
